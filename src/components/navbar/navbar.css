@@ -50,11 +50,11 @@
 .gpt3__navbar-menu_container button {
     padding: 0.5rem 1rem;
     color: #fff;
+    background: #FF4820;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 18px;
     line-height: 25px;
-    background: #FF4820;
     border-radius: 5px;
     border: none;
     outline: none;
@@ -97,7 +97,7 @@
 }
 
 /* Modbile Device */
-@media screen and (max_width: 1050px) {
+@media screen and (max-width: 1050px) {
 
     .gpt3__navbar-links_container {
         display: none;
@@ -106,6 +106,29 @@
     .gpt3__navbar-menu {
         display: flex;
     }
-    
-   
+
+}
+@media screen and (max-width: 700px) {
+
+    .gpt3__navbar{
+        padding: 2rem 4rem
+    }
+  
+
+}
+@media screen and (max-width: 550px) {
+
+    .gpt3__navbar{
+        padding: 2rem 
+    }
+    .gpt3__navbar-sign{
+        display: none;
+    }
+    .gpt3__navbar-menu_container{
+        top:20px
+    }
+    .gpt3__navbar-menu_container-links-sign{
+        display: block;
+    }
+
 }
