@@ -1,0 +1,32 @@
+.gpt3__article{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start;
+    align-items: flex-start; */
+  
+   
+}
+.gpt3__article-description{
+    background: var(--color-blog);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.gpt3__article img{
+    width:100%;
+    height:50%
+}
+
+.gpt3__article h4{
+    font-weight: 500;
+    color: #fff;
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+.gpt3__article h5{
+    color: #fff;
+    font-weight:400;
+    margin-top:1rem;
+    padding-left:1rem;
+    padding-bottom: 1rem
+}

@@ -1,0 +1,30 @@
+.gpt3__blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:1rem
+}
+.gpt3__blog h1{
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 48px;
+}
+.gpt3__blog_images{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 40% 30% 30%;
+    gap: 2rem
+}
+
+ .gpt3__blog_images_image1{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: 0rem 0.5em;
+
+} 
+
+.gpt3__blog_images_image1 .gpt3__article h4{
+    margin-bottom: 5rem;
+}
