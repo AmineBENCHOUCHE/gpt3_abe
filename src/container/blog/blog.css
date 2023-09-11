@@ -5,9 +5,9 @@
     gap:1rem
 }
 .gpt3__blog h1{
-    font-size: 44px;
+    font-size: 62px;
     font-weight: 800;
-    line-height: 48px;
+    line-height: 75px;
 }
 .gpt3__blog_images{
     display: grid;
@@ -27,6 +27,26 @@
     justify-self: flex-end;
 }
 @media screen and (max-width:550px){
+    .gpt3__blog_images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height: 100%;
+
+    }
+    .gpt3__blog_images_image1{
+        width:100%;
+        padding: 0
+    }
+
+    .gpt3__blog h1{
+        font-size: 50px; line-height: 62px
+    };
+    
+}
+@media screen and (max-width:950px){
     .gpt3__blog_images{
         display: flex;
         flex-direction: column;
