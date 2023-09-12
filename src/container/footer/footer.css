@@ -8,8 +8,8 @@
 }
 
 .gpt3__footer h1{
-    font-size: 45px; 
-    line-height: 35px ;
+    font-size: 35px; 
+    line-height: 45px ;
 }
 .gpt3__footer-button{
     display: block;
@@ -28,7 +28,7 @@
 
 @media screen and(max-width:550px) {
     .gpt3__footer h1{
-        font-size: 50px; line-height: 62px
+        font-size: 50px; line-height: 72px
     }
     
 }
