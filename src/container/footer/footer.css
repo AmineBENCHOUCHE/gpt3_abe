@@ -1,3 +1,6 @@
+*{
+    color:  #fff;list-style: none;
+}
 .gpt3__footer{
     background: var(--color-footer);
     display: flex;
@@ -18,17 +21,91 @@
     background: transparent;
     border:1px solid #fff;
     color: #fff;
-    padding:1rem;
-    height:5rem;
+    padding:0.5rem;
+    height:3rem;
     border-radius: 10px;
     font-size: 20px;
     line-height: 30px;
 }
 
+.gpt3__footer_links{
+    margin-top: 10rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
 
-@media screen and(max-width:550px) {
+.gpt3__footer_links_left p{
+    font-size: 9px;
+}
+.gpt3__footer_links_right {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap:1rem
+}
+.gpt3__footer_links_left img{
+  width: 118px; height: 30px;
+  margin-bottom: 0.5rem;
+}
+.gpt3__footer_links_right h5{
+    line-height: 16px;
+    font-size: 14px;
+    padding: 0 0 1rem 0;
+}
+.gpt3__footer_links_right li{
+    line-height: 14px;
+    font-size: 12px;
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+.gpt2__footer_copyRight{
+    width: 100%;
+    text-align: center;
+}
+.gpt2__footer-copyRight p{
+    margin-top: 2rem;
+    line-height: 14px;
+    font-size: 12px;
+}
+
+
+@media screen and (max-width:550px) {
     .gpt3__footer h1{
-        font-size: 50px; line-height: 72px
+        font-size: 34px; line-height: 42px
     }
-    
+    .gpt3__footer_links_right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap:0.5rem
+    }
+    .gpt3__footer_links_right li {
+       margin-left: 1rem;
+    }
+    .gpt2__footer-copyRight p{
+        line-height: 10px;
+        font-size: 8px;
+    }
+    .gpt3__footer button{
+        padding:0.5rem;
+        height:3rem;
+    }
+    .gpt3__footer_links{
+        gap: 1rem
+    }
+}
+@media screen and (max-width:850px) {
+    .gpt3__footer h1{
+        font-size: 44px; line-height: 50px
+    }
+    .gpt3__footer_links{
+        gap: 1rem
+    }
 }
