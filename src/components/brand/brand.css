@@ -1,15 +1,51 @@
 .gpt3__brand{
     display: flex;
-    justify-content: center;align-items: center;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
+    position: relative
 }
+
 
 .gpt3__brand div{
     flex:1;
-    max-width: 150px;
-    min-width: 120px;
     display: flex;
     justify-content: center ;
     align-items: center;
+   
 }
+.gpt3__brand-container {
+    display: flex;
+    gap:10rem
+}
+
+.gpt3__brand-container div img{
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
+
+.gpt3__brand-container{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    animation: translateLogos 10s linear infinite;
+}
+
+@keyframes translateLogos {
+    
+    0%{
+        transform: translateX(1000px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-1000px);
+    }
+}
+
+
