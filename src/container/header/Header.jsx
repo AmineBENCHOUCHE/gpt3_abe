@@ -1,9 +1,12 @@
-import React from 'react'
+import {React, useRef} from 'react'
 import './header.css'
+import { UseClickAnimation } from '../../CustomHooks/UseClickAnimation'
 import people from "../../assets/people.png"
 import ai from "../../assets/ai.png"
 
 const Header = () => {
+  const buttonRef = useRef();
+  UseClickAnimation(buttonRef, {})
   return (
     <div className='gpt3__header section__padding' id="home">
       <div className='gpt3__header-content'>
@@ -16,7 +19,9 @@ const Header = () => {
           <input type="email" placeholder="Your Email 
           Address" className='gpt3__header_container-input' />
 
-          <button type='button'>Get Started</button>
+          <div className='effect-container' ref={buttonRef}>
+            <button type='button'>Get Started</button>
+          </div>
         </div>
         <div className='gpt3__header-content__people'>
           <img src={people} alt="people"></img>

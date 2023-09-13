@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
+import { UseClickAnimation } from '../../CustomHooks/UseClickAnimation'
 import './navbar.css'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 import logo from "../../assets/logo.svg"
@@ -16,6 +17,11 @@ const Menu = () => (
 // BEM --> Block Element Modifier
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
+  // Buuton Ripple effect
+  const buttonRef = useRef();
+  UseClickAnimation(buttonRef, {})
+
+
   return (
     <div className="gpt3__navbar">
       <div className='gpt3__navbar-links'>
@@ -28,7 +34,9 @@ const Navbar = () => {
       </div>
       <div className='gpt3__navbar-sign'>
         <p>Sign in</p>
-        <button type="button">Sign up</button>
+        <div className='gpt3__navbar-sign_container' ref={buttonRef}>
+          <button type="button">Sign up</button>
+        </div>
       </div>
       <div className='gpt3__navbar-menu'>
         {
