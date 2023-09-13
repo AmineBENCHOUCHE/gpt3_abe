@@ -141,7 +141,7 @@
     font-weight: 500;
     font-family: var(--font-family);
     font-size: 12px;
-    line-height: 38px;
+    line-height: 24px;
 }
 
 .gpt3__header-image {
@@ -218,5 +218,6 @@
         font-size: 12px;
         line-height: 16px;
     }
+    
 
 }
