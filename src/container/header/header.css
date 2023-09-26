@@ -4,7 +4,7 @@
 }
 
 .gpt3__header-content {
-   flex:1;
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -73,21 +73,22 @@
 }
 
 /*Ripple effect on button */
-.gpt3__header-content__input .effect-container{
-    width:50%;
-    position: relative; 
+.gpt3__header-content__input .effect-container {
+    width: 50%;
+    position: relative;
     overflow: hidden;
-        --effect-name: ripple;
-        --effect-duration: 1000ms;
-        --effect-top: 0px;
-        --effect-left: 0px;
-        --effect-height: 100px;
-        --effect-width: 100px;
-        --effect-color: #fff;
-     
+    --effect-name: ripple;
+    --effect-duration: 1000ms;
+    --effect-top: 0px;
+    --effect-left: 0px;
+    --effect-height: 100px;
+    --effect-width: 100px;
+    --effect-color: #fff;
+
 
 }
-.effect-container::before{
+
+.effect-container::before {
     content: "";
     position: absolute;
     opacity: .3;
@@ -100,7 +101,7 @@
     background: var(--effect-color);
 }
 
-.effect-container.active::before{
+.effect-container.active::before {
     border-radius: 50%;
     animation: ripple var(--effect-duration) linear forwards;
 
@@ -108,15 +109,16 @@
 
 /*Animation*/
 @keyframes ripple {
-    from{
+    from {
         transform: scale(0);
     }
-    to{
+
+    to {
         transform: scale(6);
         opacity: 0;
 
     }
-    
+
 }
 
 .gpt3__header-content__people {
@@ -147,6 +149,7 @@
 .gpt3__header-image {
 
     flex: 1;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,8 +157,9 @@
 }
 
 .gpt3__header-image img {
-    width: 100%;
-    height: 100%;
+    width: 0%;
+    height: 100%; 
+  
 
 
 }
@@ -218,6 +222,6 @@
         font-size: 12px;
         line-height: 16px;
     }
-    
+
 
 }
