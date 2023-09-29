@@ -4,9 +4,7 @@ import React, { Component } from 'react'
 
 
 class AnimationCpn extends Component {
-    constructor(props) {
-        super(props);
-    }
+    
 
     componentDidMount() {
         this.animateElement();
@@ -16,7 +14,7 @@ class AnimationCpn extends Component {
         const table = ["A", "@", "?", "<>", "Chat", "%", "Search", ";", "C", "Y", "@", "${}", "Easy", "Simple", "Steps", "Speed", "=>", "Word", "I", "Can", "Help", "You", "Service", "Try", "AI", "Friend", "Code", "</>", "{}", "Assist", "Revolution", ""];
         const banner = document.getElementsByClassName('banner')[0];
         const blocks = document.getElementsByClassName('blocks');
-        const title = document.querySelector('h2')
+       
         for (let i = 0; i < 400; i++) {
             blocks[i].textContent = ""; // Set initial text content to an empty string
             blocks[i].style.color = "#fff";
