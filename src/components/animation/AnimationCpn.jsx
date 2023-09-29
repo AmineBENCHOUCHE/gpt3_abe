@@ -29,7 +29,6 @@ class AnimationCpn extends Component {
     render() {
         return (
             <section>
-                <h2 className='title'>GPT-3 <br /> at your service</h2>
                 <div className='banner'>
                     <div className="blocks"></div>
                 </div>
