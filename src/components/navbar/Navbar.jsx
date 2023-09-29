@@ -21,6 +21,10 @@ const Navbar = () => {
   const buttonRef = useRef();
   UseClickAnimation(buttonRef, {})
 
+  const redirectToWebsite = () => {
+    window.location.href = 'https://openai.com/';
+  };
+
 
   return (
     <div className="gpt3__navbar">
@@ -35,7 +39,7 @@ const Navbar = () => {
       <div className='gpt3__navbar-sign'>
         <p>Sign in</p>
         <div className='gpt3__navbar-sign_container' ref={buttonRef}>
-          <button type="button">Sign up</button>
+          <button onClick={redirectToWebsite} type="button">Sign up</button>
         </div>
       </div>
       <div className='gpt3__navbar-menu'>
@@ -54,7 +58,7 @@ const Navbar = () => {
               <div className="gpt3__navbar-menu_container-links-sign">
                 <p>Sign in</p>
                 <div ref={buttonRef}>
-                  <button type="button">Sign up</button>
+                  <button onClick={redirectToWebsite} type="button">Sign up</button>
                 </div>
               </div>
             </div>

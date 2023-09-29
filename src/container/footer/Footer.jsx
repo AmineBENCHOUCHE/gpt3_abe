@@ -3,11 +3,14 @@ import './footer.css'
 import logo from "../../assets/logo.svg"
 
 const Footer = () => {
+  const redirectToWebsite = () => {
+    window.location.href = 'https://openai.com/';
+  };
   return (
     <div className='gpt3__footer section__padding'>
       <h1 className='gradient__text'>Do you want to step in to the future before others</h1>
       <div className='gpt3__footer-button'>
-        <button type="button">Request Early Access</button>
+        <button onClick={redirectToWebsite} type="button">Request Early Access</button>
       </div>
       <div className='gpt3__footer_links'>
         <div className='gpt3__footer_links_left'>

@@ -1,6 +1,10 @@
 import './cta.css'
 
 const CTA = () => {
+  const redirectToWebsite = () => {
+    // Replace 'https://example.com' with the URL you want to redirect to
+    window.location.href = 'https://openai.com/';
+  };
   
   return (
     <div className='gpt3__cta section__padding' >
@@ -12,7 +16,7 @@ const CTA = () => {
 
       </div>
      
-        <button type="button">Get Started</button>
+        <button onClick={redirectToWebsite} type="button">Get Started</button>
     
       
     </div>

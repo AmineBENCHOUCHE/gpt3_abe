@@ -8,6 +8,9 @@ import AnimationCpn from '../../components/animation/AnimationCpn'
 const Header = () => {
   const buttonRef = useRef();
   UseClickAnimation(buttonRef, {})
+  const redirectToWebsite = () => {
+    window.location.href = 'https://openai.com/';
+  };
   return (
     <div className='gpt3__header section__padding' id="home">
       <div className='gpt3__header-content'>
@@ -21,7 +24,7 @@ const Header = () => {
           Address" className='gpt3__header_container-input' />
 
           <div className='effect-container' ref={buttonRef}>
-            <button type='button'>Get Started</button>
+            <button onClick={redirectToWebsite} type='button'>Get Started</button>
           </div>
         </div>
         <div className='gpt3__header-content__people'>
